@@ -1,0 +1,31 @@
+
+call pathogen#infect()        " Calling the pathogen () default is bundle if pass with params 'stuff' need the dir stuff instead bundle
+
+set nocompatible              " Use vim defaults
+set ls=2                      " Always show status line
+set showcmd                   " Show incomplete commands
+set scrolloff=3               " Keep 3 lines when scrolling
+set ruler                     " Show the cursor position all the time
+set title                     " Show title in console title bar
+set hid                       " Change buffer without saving
+set showmatch                 " Show matching bracets
+set number                    " Display the left bar with line numbers
+
+set ts=2                      " Numbers of spaces of tab character
+set et                        " Tabs are converted to spaces, use only when required
+set sts=2                     " Soft tab stop
+set nocindent
+set wrap
+ 
+set hlsearch                  " Highlight searches
+set incsearch                 " Do incremental searching
+ 
+if has("autocmd")
+  "au FileType cpp,c,java,sh,pl,php,python,ruby set autoindent
+  "au FileType cpp,c,java,sh,pl,php,py,rb set smartindent
+  "au FileType cpp,c,java,sh,pl,php set cindent
+  au BufRead *.py set cinwords=if,elif,else,for,while,try,except,finally,def,class
+  au BufRead *.rb set cinwords=if,elsif,else,unless,for,while,begin,rescue,def,class,module
+endif
+ 
+syntax on
