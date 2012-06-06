@@ -28,7 +28,3 @@ if has("autocmd")
 endif
  
 syntax on                     " or syntax enable
-set t_Co=256                  " Necessary for ubuntu users (Who uses terminal)
-let g:solarized_termcolors=256" Necessary for ubuntu users (who uses terminal)
-set background=dark           " This is for vim-colors-solarized can be set to dark/light  
-colorscheme solarized         " Setting the colorscheme :)
