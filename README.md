@@ -19,5 +19,5 @@ Using:
 
 * Fugitive Vim (Best way to use git inside vim)
 * Zencoding (HTML, CSS fast editing)
-
+* Vim Color Solarized (A good colorscheme for vim)
 
