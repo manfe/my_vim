@@ -1,4 +1,3 @@
-
 call pathogen#infect()        " Calling the pathogen () default is bundle if pass with params 'stuff' need the dir stuff instead bundle
 
 set nocompatible              " Use vim defaults
@@ -28,4 +27,8 @@ if has("autocmd")
   au BufRead *.rb set cinwords=if,elsif,else,unless,for,while,begin,rescue,def,class,module
 endif
  
-syntax on
+syntax on                     " or syntax enable
+set t_Co=256                  " Necessary for ubuntu users (Who uses terminal)
+let g:solarized_termcolors=256" Necessary for ubuntu users (who uses terminal)
+set background=dark           " This is for vim-colors-solarized can be set to dark/light  
+colorscheme solarized         " Setting the colorscheme :)
